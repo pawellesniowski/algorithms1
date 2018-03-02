@@ -28,9 +28,9 @@ function reverse(str) {
 }
 
 
-reverse('apple') === 'leppa'
-reverse('hello') === 'olleh'
-reverse('Greetings!') === '!sgniteerG'
+reverse('apple')
+reverse('hello')
+reverse('Greetings!')
 
 
 module.exports = reverse;

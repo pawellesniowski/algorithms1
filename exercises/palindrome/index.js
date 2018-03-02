@@ -7,6 +7,18 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    // solution 1:
+    // var revStr = str.split('').reduce((revStr, letter)=>letter+revStr,'')
+    // return revStr === str;
+
+    // solution 2: with every:
+    function myFun (element, index, array) {
+        return element === array[array.length-1-index]; // thich solution has one bad outcome, we check elements twice
+    }
+    return str.split('').every(myFun);
+
+
+}
 
 module.exports = palindrome;
